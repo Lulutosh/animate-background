@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: rgb(230, 149, 181);
+    background: radial-gradient(circle, rgba(230, 149, 181, 1) -100%, rgba(96, 46, 97, 1) 100%);
+}
+h1 {
+    text-align: center;
+}
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.bubbles-container{
+    position: relative;
+    padding: 20px;
+    
+
+}
+.bubble-one{
+    position: absolute;
+   background: rgb(231, 190, 224);
+   background: radial-gradient(circle, rgba(231, 190, 224, 1) 0%, rgba(237, 170, 106, 1) 100%);
+   filter: blur(20px);
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    right: 40vh;
+    top: 40vh;
+    animation: one ease-out 10s infinite;
+}
+.bubble-two {
+    position: absolute;
+    background: rgb(2, 6, 11);
+    background: radial-gradient(circle, rgb(246, 248, 250) 0%, rgb(83, 88, 92) 100%);
+    filter:blur(60px);
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    left: 80vh;
+    animation: two ease-out 5s infinite;
+    
+}
+.bubble-three {
+    position: absolute;
+    background: rgb(252, 176, 69);
+    background: radial-gradient(circle, rgba(252, 176, 69, 1) 0%, rgb(177, 35, 141) 44%, rgba(11, 75, 113, 1) 100%);
+    filter: blur(30px);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    top: 60vh;
+    animation: three ease-in-out 15s infinite;
+}
+@keyframes one {
+    0%{top:100vh; right:0vh;}
+    25%{top:40vh; right:50vh;}
+    50% {top:60vh; right:70vh;}
+    100% {top:100vh; right:100vh;}
+}
+
+@keyframes two{
+    0%{top:20vh; left:20vh;}
+    25%{top: 20vh; left:30vh;}
+    50%{top: 30vh; left:30vh;}
+    75%{top: 50vh; left:50vh;}
+    100%{top: 100vh; left:100vh;}
+}
+@keyframes three {
+    0%{top:0vh; left:0vh;}
+    25%{top:100vh; left:200vh;}
+    50%{top:0vh; left:0vh;}
+    100%{top:100vh; left:200vh;}
+}
+
+
